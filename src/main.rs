@@ -34,6 +34,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+
+ // comment
 async fn subscribe(conn: Arc<MqttConnection>, topic: &String) {
     conn.deref().client
         .subscribe(topic, QoS::AtLeastOnce)
